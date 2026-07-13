@@ -1,0 +1,125 @@
+:root {
+  --ink: #1c1c1c;
+  --muted: #5b5b5b;
+  --accent: #1f3a5f;
+  --rule: #e2e2e2;
+  --bg: #fdfdfc;
+  --max: 720px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Source Sans Pro", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 4rem;
+}
+
+h1, h2 {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 0.15rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin: 2.2rem 0 0.8rem;
+  color: var(--accent);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.35rem;
+}
+
+.role {
+  color: var(--muted);
+  margin: 0 0 1.6rem;
+  font-size: 1rem;
+}
+
+nav {
+  margin-bottom: 2.4rem;
+  font-size: 0.95rem;
+}
+
+nav a {
+  color: var(--ink);
+  text-decoration: none;
+  margin-right: 1.4rem;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+  border-bottom-color: var(--accent);
+}
+
+.profile-row {
+  display: flex;
+  gap: 1.8rem;
+  align-items: flex-start;
+  margin-bottom: 1.6rem;
+  flex-wrap: wrap;
+}
+
+.profile-row img {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.links {
+  margin: 0.6rem 0 0;
+  font-size: 0.95rem;
+}
+
+.links a {
+  color: var(--accent);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.links a:hover { text-decoration: underline; }
+
+p { margin: 0.9rem 0; }
+
+ul { padding-left: 1.2rem; margin: 0.8rem 0; }
+li { margin-bottom: 0.7rem; }
+
+a { color: var(--accent); }
+
+.entry-title { font-weight: 600; }
+
+.entry-meta {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+footer {
+  margin-top: 3.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 480px) {
+  .profile-row { flex-direction: column; }
+}
