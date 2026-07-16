@@ -128,7 +128,11 @@ These findings suggest that price-based instruments are unlikely to mobilise the
     <li>CESAER PhD Candidates' Conference, Dijon, France, March 2022</li>
   </ul>
 
-  <footer>Last Modification: July 2026</footer>
+  <footer>Last Modification: <span id="last-mod"></span></footer>
+<script>
+  document.getElementById('last-mod').textContent =
+    new Date(document.lastModified).toLocaleDateString('en-US', { year: 'numeric', month: 'long' });
+</script>
 
 </div>
 </body>
