@@ -236,19 +236,4 @@ footer {
   .links {
     gap: 0.35rem 0.9rem;
   }
-  .social-links a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 34px;
-  background: var(--accent);
-  color: #fff;
-  border-radius: 50%;
-  margin-right: 0.5rem;
-  transition: background 0.15s ease;
-}
-.social-links a:hover {
-  background: var(--accent-soft);
-}
 }
